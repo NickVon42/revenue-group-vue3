@@ -28,11 +28,11 @@ function switchTab(nextTab: TabKeys) {
   </div>
 
 
-  <KeepAlive>
-    <Transition name="slide-fade">
+  <Transition name="slide-fade">
+    <KeepAlive>
       <component :is="tabs[currentTab]" @switch-tab="switchTab" />
-    </Transition>
-  </KeepAlive>
+    </KeepAlive>
+  </Transition>
 
 </template>
 
